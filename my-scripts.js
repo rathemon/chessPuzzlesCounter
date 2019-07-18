@@ -9,7 +9,7 @@ function update() {
 }
 
 // add one to count
-function plusOne(count){
+function plusOne(){
 	localStorage.setItem("count", (Number(localStorage.getItem("count")) +1)) 
 	update()
 }
@@ -18,6 +18,6 @@ function plusOne(count){
 // reset count
 function reset(){
 	if (confirm("Are you sure you want to reset?")) {
-    	localStorage.setItem("count",0);
-		update();
+    	localStorage.setItem("count",0)
+		update()
 }
